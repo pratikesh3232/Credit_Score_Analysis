@@ -1,13 +1,10 @@
-# Credit_Analysis
+# Credit Score Prediction
 
-## Loan Applicant Profiles Analysis 📊
+## 1. Introduction
 
-This repository contains an in-depth analysis of a comprehensive dataset featuring potential loan applicants, specifically tailored for the Indian demographic.
+This project aims to predict credit scores using machine learning models. The project leverages various algorithms like Linear Regression, Decision Tree, Random Forest, XGBoost, and ANN to build a robust predictive system.
 
-## Project Overview 📑
-The dataset encompasses various features, from basic demographics to financial details, providing insights into the creditworthiness of individuals. The aim is to derive insights, patterns, and relationships between various factors influencing loan applications.
+## 2. Dataset
 
-## Tools & Technologies 🛠
-Programming Language: Python
-Libraries: pandas, Seaborn, Matplotlib
-Environment: Jupyter Notebook
+The dataset used for this project contains information about loan applicants, including demographics, financial history, and credit details. It's preprocessed and cleaned to handle missing values and categorical features before model training.
+
