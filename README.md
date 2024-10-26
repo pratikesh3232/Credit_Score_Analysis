@@ -85,3 +85,18 @@ The models are evaluated using the **Mean Squared Error (MSE)** and **Root Mean 
 ## Conclusion
 
 The project provides a comprehensive analysis of credit score prediction for two-wheeler loan applicants. Based on the evaluation metrics, the **Random Forest** and **Stacking Ensemble** models demonstrated the best performance with the lowest RMSE values. These models can be further fine-tuned and deployed for accurate and efficient credit score estimation, facilitating faster and more informed loan approval decisions.
+
+## Requirements
+
+To run the code in this project, you'll need the following libraries installed:
+
+- Python 3.11
+- pandas==1.5.3
+- NumPy==1.24.3
+- scikit-learn==1.2.2
+- seaborn==0.12.2
+- matplotlib==3.7.1
+- XGBoost==1.7.5
+
+
+You can install these libraries using pip:
