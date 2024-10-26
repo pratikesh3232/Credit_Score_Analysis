@@ -33,13 +33,40 @@ The project explores the following machine learning models for credit score pred
 - **XGBoost:** A gradient boosting algorithm known for its efficiency, using **40 estimators** and a learning rate of **0.7**.
 - **ANN:** Artificial Neural Network with **2 hidden layers**, each containing **6 neurons**, for complex pattern recognition, trained for **50 epochs** with a batch size of **32**.
 
+## Data Preprocessing
+
+Before training the machine learning models, the dataset underwent several preprocessing steps to ensure data quality and improve model performance. These steps included:
+
+**1. Handling Missing Values:**
+
+-   Initial analysis revealed **1,000** missing values in the 'Occupation' column. These missing values were strategically imputed with 'None' where the 'Employment Profile' was 'Unemployed', as it was logical to assume unemployed individuals would not have an occupation listed. This imputation resulted in a **100% complete dataset** with no missing values.
+
+**2. Feature Encoding:**
+
+-   **6 categorical columns** ('Gender', 'State', 'City', 'Occupation', 'Employment Profile', 'Existing Customer') were identified. To enable their use in machine learning models, **one-hot encoding** was applied. This transformed the categorical features into numerical representations, creating **over 400 new columns** representing the various categories.
+
+**3. Feature Scaling:**
+
+-   **8 numerical features** ('Income', 'Age', 'Credit History Length', 'Number of Existing Loans', 'Loan Amount', 'Loan Tenure', 'LTV Ratio', 'Profile Score') were scaled using **Min-Max normalization**. This ensured all numerical features were within the range of 0 to 1, preventing features with larger values from dominating the model training process and improving model stability.
+
+**4. Feature Engineering:**
+
+-   A new feature, **'Income_to_Loan_Ratio'**, was engineered by dividing 'Income' by 'Loan Amount'. This feature represents the applicant's ability to repay the loan and was scaled using **Min-Max normalization** to maintain consistency with other numerical features.
+
+These preprocessing steps significantly enhanced the quality and suitability of the dataset for machine learning model training, ultimately contributing to improved model performance and accuracy.
 ### EDA Visualizations
 
-![Gender Distribution](screenshots/gender_distribution.png)
+![Gender Distribution](images/Distribution_Gender_EDA.PNG)
 This bar chart shows the distribution of loan applicants by gender.
 
-![Age Distribution by Gender](screenshots/age_distribution_gender.png)
+![Age Distribution by Gender](images/Age_Distribution_by_Gender.PNG)
 This boxplot illustrates the age distribution of loan applicants by gender.
+
+![Distribution_of_Occupation](images/Distribution_of_Occupation.PNG)
+This Barplot illustrates the Occupation distribution of loan applicants .
+
+![Statewise_Distribution](images/Statewise_Distribution.PNG)
+This Barplot illustrates the Statewise distribution of loan applicants .
 
 ## Evaluation Metrics and Results
 
