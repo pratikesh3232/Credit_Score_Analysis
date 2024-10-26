@@ -77,9 +77,11 @@ The models are evaluated using the **Mean Squared Error (MSE)** and **Root Mean 
 | Linear Regression | 259.57 | 16.11 |
 | Decision Tree | 53.05 | 7.28 |
 | Random Forest | 41.45 | 0.43 |
-| Stacking Ensemble | 0.004 | 0.061 |
-| XGBoost | 0.004 | 0.063 |
-| ANN | 0.024 | 0.156 |
+| Stacking Ensemble | 95.92 | 9.79 |
+| XGBoost | 127.88 | 11.30 |
+
+ Model | MAE |
+| ANN | 13.9 |
 
 
 ## Conclusion
@@ -98,5 +100,3 @@ To run the code in this project, you'll need the following libraries installed:
 - matplotlib==3.7.1
 - XGBoost==1.7.5
 
-
-You can install these libraries using pip:
