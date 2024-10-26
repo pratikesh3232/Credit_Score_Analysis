@@ -80,7 +80,7 @@ The models are evaluated using the **Mean Squared Error (MSE)** and **Root Mean 
 | Stacking Ensemble | 95.92 | 9.79 |
 | XGBoost | 127.88 | 11.30 |
 
- Model | MAE |
+| Model | MAE |
 | ANN | 13.9 |
 
 
