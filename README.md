@@ -33,6 +33,14 @@ The project explores the following machine learning models for credit score pred
 - **XGBoost:** A gradient boosting algorithm known for its efficiency, using **40 estimators** and a learning rate of **0.7**.
 - **ANN:** Artificial Neural Network with **2 hidden layers**, each containing **6 neurons**, for complex pattern recognition, trained for **50 epochs** with a batch size of **32**.
 
+### EDA Visualizations
+
+![Gender Distribution](screenshots/gender_distribution.png)
+This bar chart shows the distribution of loan applicants by gender.
+
+![Age Distribution by Gender](screenshots/age_distribution_gender.png)
+This boxplot illustrates the age distribution of loan applicants by gender.
+
 ## Evaluation Metrics and Results
 
 The models are evaluated using the **Mean Squared Error (MSE)** and **Root Mean Squared Error (RMSE)** metrics. The following table summarizes the results:
