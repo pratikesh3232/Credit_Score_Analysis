@@ -80,10 +80,6 @@ The models are evaluated using the **Mean Squared Error (MSE)** and **Root Mean 
 | Stacking Ensemble | 95.92 | 9.79 |
 | XGBoost | 127.88 | 11.30 |
 
-| Model | MSE |
-| ANN | 13.9 |
-
-
 ## Conclusion
 
 The project provides a comprehensive analysis of credit score prediction for two-wheeler loan applicants. Based on the evaluation metrics, the **Random Forest** and **Stacking Ensemble** models demonstrated the best performance with the lowest RMSE values. These models can be further fine-tuned and deployed for accurate and efficient credit score estimation, facilitating faster and more informed loan approval decisions.
