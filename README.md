@@ -77,7 +77,8 @@ The models are evaluated using the **Mean Squared Error (MSE)** and **Root Mean 
 | Linear Regression | 259.57 | 16.11 |
 | Decision Tree | 53.05 | 7.28 |
 | Random Forest | 41.45 | 0.43 |
-| Stacking Ensemble | 95.92 | 9.79 |
+| SVM | 41.45 | 0.43 |
+| Stacking Ensemble | 29.92 | 5.41 |
 | XGBoost | 127.88 | 11.30 |
 
 ## Conclusion
