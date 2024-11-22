@@ -6,7 +6,7 @@ This project aims to predict credit scores for two-wheeler loan applicants using
 
 ## Dataset
 
-The dataset used in this project contains information about **100,000** two-wheeler loan applicants, including the following features:
+The dataset used in this project contains information about **279856** two-wheeler loan applicants, including the following features:
 
 - **Age:** Applicant's age (ranging from **18 to 70**).
 - **Gender:** Applicant's gender (**Male, Female, Other**).
