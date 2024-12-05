@@ -62,22 +62,22 @@ def predict():
     try:
         # Extract input from form
         form_data = request.form
-        input_data = [[
-            int(form_data['Age']),
-            float(form_data['Income']),
-            int(form_data['Credit History Length']),
-            int(form_data['Number of Existing Loans']),
-            float(form_data['Loan Amount']),
-            int(form_data['Loan Tenure']),
-            int(form_data['Existing Customer']),
-            float(form_data['LTV Ratio']),
-            int(form_data['Profile Score']),
-            int(form_data['Gender']),
-            int(form_data['State']),
-            int(form_data['City']),
-            int(form_data['Employment Profile']),
-            int(form_data['Occupation'])
-        ]]
+        input_data = {
+            'Age': int(form_data['Age']),
+            'Income': float(form_data['Income']),
+            'Credit History Length': int(form_data['Credit History Length']),
+            'Number of Existing Loans': int(form_data['Number of Existing Loans']),
+            'Loan Amount': float(form_data['Loan Amount']),
+            'Loan Tenure': int(form_data['Loan Tenure']),
+            'Existing Customer': int(form_data['Existing Customer']),
+            'LTV Ratio': float(form_data['LTV Ratio']),
+            'Profile Score': int(form_data['Profile Score']),
+            'Gender': form_data['Gender'],  # Categorical (raw string)
+            'State': form_data['State'],    # Categorical (raw string)
+            'City': int(form_data['City']),
+            'Employment Profile': int(form_data['Employment Profile']),
+            'Occupation': int(form_data['Occupation']),
+}
 
         # Convert to DataFrame
         input_df = pd.DataFrame(input_data, columns=columns)
