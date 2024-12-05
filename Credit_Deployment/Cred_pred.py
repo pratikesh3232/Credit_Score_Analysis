@@ -80,7 +80,7 @@ def predict():
 }
 
         # Convert to DataFrame
-        input_df = pd.DataFrame(input_data, columns=columns)
+        input_df = pd.DataFrame([input_data], columns=columns)
 
         # Make prediction
         prediction = model.predict(input_df)
