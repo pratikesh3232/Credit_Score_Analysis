@@ -4,53 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credit Score Prediction</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Credit Score Prediction</h1>
-    <form action="/predict" method="POST">
-        <label for="Age">Age:</label>
-        <input type="number" name="Age" id="Age" required><br><br>
-
-        <label for="Income">Income:</label>
-        <input type="number" step="0.01" name="Income" id="Income" required><br><br>
-
-        <label for="CreditHistory">Credit History Length:</label>
-        <input type="number" name="Credit History Length" id="CreditHistory" required><br><br>
-
-        <label for="Loans">Number of Existing Loans:</label>
-        <input type="number" name="Number of Existing Loans" id="Loans" required><br><br>
-
-        <label for="LoanAmount">Loan Amount:</label>
-        <input type="number" step="0.01" name="Loan Amount" id="LoanAmount" required><br><br>
-
-        <label for="LoanTenure">Loan Tenure:</label>
-        <input type="number" name="Loan Tenure" id="LoanTenure" required><br><br>
-
-        <label for="Customer">Existing Customer (1 for Yes, 0 for No):</label>
-        <input type="number" name="Existing Customer" id="Customer" required><br><br>
-
-        <label for="LTV">LTV Ratio:</label>
-        <input type="number" step="0.01" name="LTV Ratio" id="LTV" required><br><br>
-
-        <label for="ProfileScore">Profile Score:</label>
-        <input type="number" name="Profile Score" id="ProfileScore" required><br><br>
-
-        <label for="Gender">Gender (1 for Male, 0 for Female):</label>
-        <input type="number" name="Gender" id="Gender" required><br><br>
-
-        <label for="State">State:</label>
-        <input type="number" name="State" id="State" required><br><br>
-
-        <label for="City">City:</label>
-        <input type="number" name="City" id="City" required><br><br>
-
-        <label for="Employment">Employment Profile:</label>
-        <input type="number" name="Employment Profile" id="Employment" required><br><br>
-
-        <label for="Occupation">Occupation:</label>
-        <input type="number" name="Occupation" id="Occupation" required><br><br>
-
-        <button type="submit">Predict</button>
-    </form>
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="mb-4">Credit Score Prediction</h1>
+            <p class="text-muted">Enter your details below to get a prediction.</p>
+        </div>
+        <form action="/predict" method="POST" class="needs-validation" novalidate>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="Age" class="form-label">Age</label>
+                    <input type="number" name="Age" id="Age" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="Income" class="form-label">Income</label>
+                    <input type="number" step="0.01" name="Income" id="Income" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="CreditHistory" class="form-label">Credit History Length</label>
+                    <input type="number" name="Credit History Length" id="CreditHistory" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="Loans" class="form-label">Number of Existing Loans</label>
+                    <input type="number" name="Number of Existing Loans" id="Loans" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="LoanAmount" class="form-label">Loan Amount</label>
+                    <input type="number" step="0.01" name="Loan Amount" id="LoanAmount" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="LoanTenure" class="form-label">Loan Tenure</label>
+                    <input type="number" name="Loan Tenure" id="LoanTenure" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="Customer" class="form-label">Existing Customer (1 for Yes, 0 for No)</label>
+                    <input type="number" name="Existing Customer" id="Customer" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="LTV" class="form-label">LTV Ratio</label>
+                    <input type="number" step="0.01" name="LTV Ratio" id="LTV" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="ProfileScore" class="form-label">Profile Score</label>
+                    <input type="number" name="Profile Score" id="ProfileScore" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="Gender" class="form-label">Gender (1 for Male, 0 for Female)</label>
+                    <input type="number" name="Gender" id="Gender" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="State" class="form-label">State</label>
+                    <input type="number" name="State" id="State" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="City" class="form-label">City</label>
+                    <input type="number" name="City" id="City" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="Employment" class="form-label">Employment Profile</label>
+                    <input type="number" name="Employment Profile" id="Employment" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="Occupation" class="form-label">Occupation</label>
+                    <input type="number" name="Occupation" id="Occupation" class="form-control" required>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary">Predict</button>
+            </div>
+        </form>
+    </div>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
