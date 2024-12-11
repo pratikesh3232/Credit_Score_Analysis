@@ -68,6 +68,12 @@ This Barplot illustrates the Occupation distribution of loan applicants .
 ![Statewise_Distribution](images/Statewise_Distribution.PNG)
 This Barplot illustrates the Statewise distribution of loan applicants .
 
+
+![Deployment](images/deploy_2.PNG)
+
+![Result](images/deploy_4.PNG)
+
+
 ## Evaluation Metrics and Results
 
 The models are evaluated using the **Mean Squared Error (MSE)** and **Root Mean Squared Error (RMSE)** metrics. The following table summarizes the results:
