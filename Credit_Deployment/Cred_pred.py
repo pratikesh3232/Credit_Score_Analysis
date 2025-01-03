@@ -2,25 +2,25 @@ import pickle
 import pandas as pd
 from flask import Flask, render_template, request, jsonify
 
-# Create Flask app
+
 app = Flask(__name__, template_folder='/workspaces/Credit_Score_Analysis/templates')
 
-# Load the saved model
+
 model_path = '/workspaces/Credit_Score_Analysis/model PKL/model.pkl'
 model = pickle.load(open(model_path, 'rb'))
 
-# Define columns used by the model
+
 columns = ['Age', 'Income', 'Credit History Length', 'Number of Existing Loans',
            'Loan Amount', 'Loan Tenure', 'Existing Customer', 'LTV Ratio',
            'Profile Score', 'Gender', 'State', 'City', 'Employment Profile',
            'Occupation']
 
-# Home route with an explanation and navigation to the form
+
 @app.route('/')
 def home():
-    return render_template('home.html')  # Home page (template should be created)
+    return render_template('home.html')  
 
-# Prediction form route
+
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
     if request.method == 'POST':
