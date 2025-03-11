@@ -1,6 +1,6 @@
 # Credit Score Prediction 
 
-## Project Overview
+## Project Overview 
 
 This project aims to predict credit scores for two-wheeler loan applicants using various machine learning models. The project utilizes a dataset of **279856** credit profiles, including applicant demographics, financial information, and loan details. By leveraging machine learning techniques, the project seeks to develop a robust model for accurate credit score prediction, achieving an **RMSE below 5** (representing the average error in credit score prediction).
 
